@@ -28,6 +28,21 @@
     - `var arr: [type] = []`
     - `var dict: [type: type] = [:]`
 
+## Optional Variable
+
+- Swift에서 기본 변수(상수)는 nil을 가질 수 없음, nil을 가질 수 있는 변수(상수)를 Optional Variable이라 함
+  - 선언: `var varName: type?`
+  - 기본 변수를 선언한 뒤 할당하지 않은채로 접근 시 error 발생
+    - `error: variable 'varName' used before being initialized`
+  - Optional 변수를 선언한 뒤 할당하지 않은채로 접근 시 nil
+- Unwrapped
+  - 값이 할당 된 Optional 변수에 접근시 Optional()에 감싸진(wrapped) 상태
+  - unwrap 해주기 위해선 변수 뒤에 `!` 붙여줌
+    ```swift
+    var varName: type? = value
+    print(varName!)
+    ```
+
 ## Question?
 
 - 딕셔너리의 값을 접근했을 때 다음 warning이 발생하는 이유
