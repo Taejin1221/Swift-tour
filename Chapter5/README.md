@@ -103,3 +103,6 @@
   aniClass2.leg = 2
   print(aniClass1.leg, aniClass2.leg) // 2 2
   ```
+
+  - method 내부에서 property를 변경하기 위해선 func 앞에 `mutating` 키워드를 붙여줘야 함
+    - 아닐시 error: `error: cannot assign to property: 'self' is immutable`
